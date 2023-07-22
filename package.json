@@ -1,0 +1,23 @@
+{
+  "name":"pos-system",
+  "author":"m4c310",
+  "description":"POS System",
+  "main": "src/electron/main.js",
+  "version":"1.0.0",
+  "scripts": {
+    "start": "ELECTRON_DISABLE_SECURITY_WARNINGS=true electron ."
+  },
+  "build": {
+    "appId": "foundation.cmo.pos",
+    "productName": "POS",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": "NSIS"
+    }
+  },
+  "devDependencies": {
+    "electron": "^25.3.1"
+  }
+}
