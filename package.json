@@ -3,10 +3,11 @@
   "author": "m4c310",
   "description": "POS System",
   "main": "src/electron/main.js",
-  "version": "1.0.1",
+  "version": "1.0.8",
   "scripts": {
     "start": "ELECTRON_DISABLE_SECURITY_WARNINGS=true electron .",
-    "build": "electron-builder build --mac"
+    "build": "electron-builder build --mac",
+    "package":"electron-builder -p always"
   },
   "repository": "https://github.com/m4rc310RCP/posfront",
   "publish": {

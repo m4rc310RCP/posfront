@@ -58,6 +58,7 @@ const showMessage = (message) => {
 
 autoUpdater.on("update-available", (info) => {
   log.info("Update avaliable");
+  autoUpdater.downloadUpdate();
 });
 
 autoUpdater.on("update-not-available", (info) => {
