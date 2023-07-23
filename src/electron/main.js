@@ -68,6 +68,7 @@ autoUpdater.on("update-not-available", (info) => {
 /*Download Completion Message*/
 autoUpdater.on("update-downloaded", (info) => {
   log.info(`Update downloaded. Current version ${app.getVersion()}`);
+  autoUpdater.quitAndInstall();
 });
 
 autoUpdater.on("error", (info) => {
